@@ -36,10 +36,10 @@ mkdir ./data/processed/user_logs
 mkdir ./data/processed/event_logs
 
 # 5. Copy all server log files (files with "server" in the name AND a .log extension) from ./data/raw to ./data/processed/server_logs
-cp ~/Desktop/DSI_Parent/shell/02_activities/assignments/data/raw/*server*.log ~/Desktop/DSI_Parent/shell/02_activities/assignments/data/processed/server_logs/
+cp ./data/raw/*server*.log ./data/processed/server_logs/
+
 # 6. Repeat the above step for user logs and event logs
-cp ~/Desktop/DSI_Parent/shell/02_activities/assignments/data/raw/*user*.log ~/Desktop/DSI_Parent/shell/02_activities/assignments/data/processed/user_logs/
-cp ~/Desktop/DSI_Parent/shell/02_activities/assignments/data/raw/*event*.log ~/Desktop/DSI_Parent/shell/02_activities/assignments/data/processed/event_logs/
+
 # 7. For user privacy, remove all files containing IP addresses (files with "ipaddr" in the filename) from ./data/raw and ./data/processed/user_logs
 rm ~/Desktop/DSI_Parent/shell/02_activities/assignments/data/raw/*ipaddr*
 
